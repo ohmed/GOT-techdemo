@@ -1,0 +1,109 @@
+[
+
+    {
+        "name": "stark",
+        "children": [{
+            "name": "eddard"
+        }, {
+            "name": "robb"
+        }, {
+            "name": "sansa"
+        }, {
+            "name": "bran"
+        }, {
+            "name": "arya"
+        }, {
+            "name": "rickon"
+        }, {
+            "name": "jon snow"
+        }]
+    },
+
+    {
+        "name": "greyjoy",
+        "children": [{
+            "name": "balon"
+        }, {
+            "name": "theon"
+        }, {
+            "name": "asha"
+        }]
+    },
+
+    {
+        "name": "martell",
+        "children": [{
+            "name": "oberyn"
+        }]
+    },
+
+    {
+        "name": "tully",
+        "children": [{
+            "name": "hoster"
+        }, {
+            "name": "catelyn"
+        }]
+    },
+
+    {
+        "name": "tyrell",
+        "children": [{
+            "name": "margaery"
+        }, {
+            "name": "loras"
+        }]
+    },
+
+    {
+        "name": "lannister",
+        "children": [{
+            "name": "tywin"
+        }, {
+            "name": "kevan"
+        }, {
+            "name": "cersei"
+        }, {
+            "name": "ser jaime"
+        }, {
+            "name": "tyrion"
+        }, {
+            "name": "lancel"
+        }]
+    },
+
+    {
+        "name": "targaryen",
+        "children": [{
+            "name": "viserys"
+        }, {
+            "name": "daenerys"
+        }]
+    },
+
+    {
+        "name": "arryn",
+        "children": [{
+            "name": "lysa"
+        }, {
+            "name": "robin"
+        }]
+    },
+
+    {
+        "name": "baratheon",
+        "children": [{
+            "name": "stannis"
+        }, {
+            "name": "renly"
+        }, {
+            "name": "robert"
+        }, {
+            "name": "joffrey"
+        }, {
+            "name": "myrcella"
+        }, {
+            "name": "tommen"
+        }]
+    }
+]

@@ -1,0 +1,344 @@
+.game-body {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.cursor-grab {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+}
+.cursor-grabbing {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+}
+a {
+    cursor: pointer;
+    color: #00b6ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.cfx {
+    clear: both;
+}
+
+/*----------------------------------*/
+
+#viewport, #ui {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -10;
+    width: 100% !important;
+    height: 100% !important;
+    -webkit-transform-origin: 0 0 0;
+}
+#ui {
+    z-index: 10;
+}
+
+/**/
+
+#ui #map-controls-top {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+}
+#ui #map-controls-top .background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: opacity 200ms ease;
+}
+#ui #map-controls-top:hover .background {
+    opacity: 0.6;
+}
+#ui #map-controls-top .arrow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/up-arrow.png);
+}
+
+#ui #map-controls-left {
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    left: 10px;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+}
+#ui #map-controls-left .background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: opacity 200ms ease;
+}
+#ui #map-controls-left:hover .background {
+    opacity: 0.6;
+}
+#ui #map-controls-left .arrow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/left-arrow.png);
+}
+
+#ui #map-controls-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    right: 10px;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+}
+#ui #map-controls-right .background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: opacity 200ms ease;
+}
+#ui #map-controls-right:hover .background {
+    opacity: 0.6;
+}
+#ui #map-controls-right .arrow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/right-arrow.png);
+}
+
+#ui #map-controls-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+}
+#ui #map-controls-bottom .background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: opacity 200ms ease;
+}
+#ui #map-controls-bottom:hover .background {
+    opacity: 0.6;
+}
+#ui #map-controls-bottom .arrow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/down-arrow.png);
+}
+
+/*------------------------------*/
+
+#main-nav {
+    display: none; /* tmp */
+}
+
+nav {
+    padding: 3px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #000;
+    overflow: auto;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+nav a {
+    display: table-cell;
+    white-space: nowrap;
+    font-family: 'GOT';
+    font-size: 10px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    line-height: 1.3;
+    text-decoration: none;
+    color: #ddd;
+    padding: 1px 5px;
+}
+nav:not(#families) a:not(:first-child) {
+    padding-right: 20px;
+}
+nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
+}
+nav a img {
+    margin-right: 10px;
+}
+/*------------------------------*/
+
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    display: none;
+}
+.dropdown.open {
+    color: #00b0f6;
+}
+/*-----------------------------*/
+
+.info-popup {
+    position: absolute;    
+    display: none;    
+    z-index: 100;
+    opacity: 0;
+}
+
+.info-popup-content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0 30px 1px #111 inset;
+    border-radius: 2px;
+    background-color: #111;
+    padding: 15px;
+    color: #efefef;
+    background-color: #222;
+}
+
+.info-popup-content p {
+    max-width: 278px;
+}
+
+.info-popup-arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;    
+    border-top: 20px solid #010101;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-popup img {
+    border: 1px solid #444;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.info-popup img.pull-left,
+.info-popup img.pull-right {
+    border: none;
+    max-width: 64px;
+}
+
+.moview-preview-thumb {
+    width: 100%;
+}
+
+.info-popup-heading {
+    text-align: center;
+}
+
+.info-popup-close {
+    text-align: right;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.map-controls {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 32px;
+}
+
+.map-control {
+    height: 32px;
+    margin-bottom: 5px;
+    border: 1px solid #444;
+    cursor: pointer;
+    box-shadow: 0 0 30px 2px #111 inset;
+    border-radius: 2px;
+    color: #efefef;
+    background-color: #222;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.map-control:hover {
+    box-shadow: 0 0 5px #ddd;
+}
+
+/**/
+
+#settings-gui {
+    display: none;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+}

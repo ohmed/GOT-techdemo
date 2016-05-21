@@ -1,0 +1,77 @@
+[
+
+    "/js/libs/jquery.min.js",
+    "/js/libs/velocity.min.js",
+    "/js/libs/jquery.mousewheel.min.js",
+    "/js/libs/vent.js",
+    "/js/libs/dat.gui.min.js",
+
+    "/js/libs/NWE.js",
+
+    "/js/ui/Landing.js",
+
+    "/js/GOT.js",
+
+    "/js/Settings.js",
+
+    "/js/core/GameObject.js",
+    "/js/core/Building.js",
+    "/js/core/Decoration.js",
+
+    "/js/decorations/Rock.js",
+    "/js/decorations/Ground.js",
+    "/js/decorations/GroundLabel.js",
+
+    "/js/buildings/Town.js",
+
+    "/js/buildings/GreatNorthWall.js",
+    "/js/buildings/Winterfell.js",
+    "/js/buildings/Braavos.js",
+    "/js/buildings/KingsLanding.js",
+    "/js/buildings/Lys.js",
+    "/js/buildings/Myr.js",
+    "/js/buildings/Norvos.js",
+    "/js/buildings/Pentos.js",
+    "/js/buildings/Pyke.js",
+    "/js/buildings/Riverrun.js",
+    "/js/buildings/TheTwins.js",
+    "/js/buildings/Tyrosh.js",
+    "/js/buildings/Volantis.js",
+    "/js/buildings/WhiteHarbor.js",
+
+    "/js/buildings/Tree.js",
+    "/js/buildings/Bush.js",
+    "/js/buildings/Castle.js",
+
+    "/js/Init.js",
+    "/js/View.js",
+    "/js/UI.js",
+    "/js/Map.js",
+    "/js/Loader.js",
+    "/js/Controls.js",
+    "/js/ControlsDrag.js",
+    "/js/core/AnimationHandler.js",
+
+    "/js/sceneManagers/FloraMng.js",
+    "/js/sceneManagers/DecorationMng.js",
+    "/js/sceneManagers/BuildingMng.js",
+    "/js/Landscape.js",
+
+    "/js/Water.js",
+    "/js/Terrain.js",
+    "/js/Render.js",
+
+    "/js/Picker.js",
+
+    "/js/ui/Panel.js",
+    "/js/ui/InfoPopup.js",
+    "/js/ui/ControlBtns.js",
+
+    "/js/menu/Init.js",
+
+    "/js/editor/Editor.js",
+    "/js/editor/Terrain.js",
+    "/js/editor/Flora.js",
+    "/js/editor/Decorations.js"
+
+]

@@ -1,0 +1,707 @@
+@font-face {
+    font-family: 'GOT';
+    src: url('fonts/got.ttf');
+}
+/*--------------------------------*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 2px;
+}
+::-webkit-scrollbar-track {
+    background-color: #121212;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #393939;
+}
+/*--------------------------------*/
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font: 14px arial;
+    -webkit-font-smoothing: antialiased;
+}
+
+#landing-page {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    transition: opacity 800ms ease;
+    opacity: 1;
+    z-index: -2;
+}
+
+.hide {
+    opacity: 0 !important;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/**/
+
+#landing-page[class="mobile"] {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile #todo {
+    display: block;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'GOT';
+    color: #fff;
+    cursor: default;
+}
+
+/**/
+
+#landing-page[class="desktop"] {
+    display: block;
+    min-width: 1100px;
+}
+
+.header {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: #000;
+}
+
+.header .title {
+    position: relative;
+    margin-left: 7%;
+    padding-top: 53px;
+    cursor: default;
+    height: 47px;
+    float: left;
+}
+
+.header .title #main {
+    position: absolute;
+    font-family: 'GOT';
+    font-size: 40px;
+    color: #fff;
+}
+
+.header .title #map {
+    position: absolute;
+    left: 11px;
+    bottom: -15px;
+    font-family: 'GOT';
+    font-size: 15px;
+    color: #c22;
+    z-index: 1;
+}
+
+.header .title #alpha {
+    position: absolute;
+    left: 508px;
+    bottom: 3px;
+    font: 14px bold arial;
+    font-family: arial;
+    color: #444;
+}
+
+.header .menu {
+    float: right;
+    margin-right: 7%;
+    height: 100px;
+    font-family: 'GOT';
+    font-size: 13px;
+}
+
+.header .menu a {
+    display: block;
+    float: left;
+    margin-left: 40px;
+    margin-top: 80px;
+    color: #fff;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: opacity 100ms ease, padding 100ms ease;
+    cursor: pointer;
+}
+
+.header .menu a:hover {
+    opacity: 1;
+}
+
+.header .menu .active {
+    opacity: 1;
+    color: #c22;
+    padding-top: 3px;
+}
+
+/**/
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 5px;
+    background-color: #000;
+    z-index: 0;
+    border-top: 1px solid #181818;
+    border-bottom: 1px solid #181818;
+}
+
+.content #home {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.content #home .bg {
+    opacity: 0;
+}
+
+.content #home .bg #bg-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 100% ),
+                linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.5) 100% );
+}
+
+.content #about {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.content #about #about-block {
+    position: absolute;
+    right: 0px;
+    top: 10%;
+    width: 50%;
+    height: 80%;
+    background-color: #111;
+}
+
+.content #about #about-block #bg-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 100% ),
+                linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.5) 100% );
+}
+
+.content #about #about-block .item {
+    position: relative;
+    width: 80%;
+    height: 73px;
+    margin: 20px 50px 20px 50px;
+}
+
+.content #about #about-block .item .pic {
+    float: left;
+    width: 70px;
+    height: 70px;
+    background-size: 100% 100%;
+    border-radius: 35px;
+    opacity: 0.7;
+    transition: opacity 200ms ease;
+}
+
+.content #about #about-block .item:hover .pic {
+    opacity: 1;
+}
+
+.content #about #about-block .item .info-block {
+    float: left;
+}
+
+.content #about #about-block .item .info-block .title {
+    padding-top: 5px;
+    padding-left: 15px;
+    font: 15px normal arial;
+    font-family: arial;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content #about #about-block .item .info-block .desc {
+    padding-top: 10px;
+    padding-left: 25px;
+    font: 13px normal arial;
+    font-family: arial;
+    color: #aaa;
+    cursor: default;
+}
+
+.content #blog {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.content #blog #blog-block {
+    position: absolute;
+    right: 0px;
+    top: 10%;
+    width: 50%;
+    height: 80%;
+    background-color: #111;
+}
+
+.content #blog #blog-block #bg-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 100% ),
+                linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.5) 100% );
+}
+
+.content #blog #todo {
+    position: absolute;
+    top: 160px;
+    left: 10%;
+    font-size: 20px;
+    font-family: 'GOT';
+    color: #fff;
+    cursor: default;
+}
+
+/**/
+
+.content .bg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 62%;
+    height: 100%;
+    background-color: #000;
+    background-image: url(img/img1.jpg);
+    background-size: 100% 100%;
+    opacity: 1;
+}
+
+/**/
+
+.content #start-bar {
+    position: absolute;
+    bottom: 95px;
+    right: 15%;
+    width: 310px;
+    height: 100px;
+    transition: width 500ms ease;
+    overflow: hidden;
+}
+
+.content .close {
+    width: 0px !important;
+}
+
+.content #start-bar #start-btn {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    height: 17px;
+    padding: 13px;
+    text-align: center;
+    color: #fff;
+    background-color: #c22;
+    cursor: pointer;
+    font-family: 'GOT';
+    font-size: 15px;
+    transition: opacity 100ms ease;
+    opacity: 0.8;
+}
+
+.content #start-bar #start-btn:hover {
+    opacity: 1;
+}
+
+.disabled-btn {
+    background-color: #777 !important;
+    opacity: 0.8 !important;
+}
+
+.content #start-bar #quality-bar {
+    position: relative;
+    display: none;
+    width: 310px;
+    height: 100%;
+}
+
+.content #start-bar #quality-bar .bg {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 0;
+    background-image: url('');
+}
+
+.content #start-bar #quality-bar .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font: 18px bold arial;
+    font-family: arial;
+    color: #fff;
+    letter-spacing: 0.1em;
+    cursor: default;
+    z-index: 10;
+}
+
+.content #start-bar #quality-bar .item {
+    position: relative;
+    float: left;
+    margin-top: 40px;
+    margin-left: 14px;
+    height: 17px;
+    padding: 13px;
+    text-align: center;
+    color: #fff;
+    background-color: #888;
+    cursor: pointer;
+    font-family: 'GOT';
+    font-size: 15px;
+    transition: opacity 100ms ease;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.content #start-bar #quality-bar .item:hover {
+    opacity: 1;
+}
+
+/**/
+
+.content #switches-bar {
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
+    width: 100px;
+    height: 25px;
+}
+
+.content #switches-bar .item {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms ease;
+}
+
+.content #switches-bar .item:hover {
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+}
+
+.content #switches-bar .active {
+    opacity: 1;
+}
+
+/**/
+
+.content .quote-bar {
+    position: absolute;
+    top: 135px;
+    left: 15%;
+}
+
+.content .quote-bar .quote {
+    color: #fff;
+}
+
+.content .quote-bar .text {
+    font-size: 23px;
+    cursor: default;
+}
+
+.content .quote-bar .author {
+    font-size: 14px;
+    color: #555;
+    cursor: default;
+    float: right;
+    padding-right: 12px;
+}
+
+/**/
+
+.content .like-bar {
+    position: absolute;
+    top: 40px;
+    left: 47%;
+    z-index: 2;
+}
+
+.content .like-bar .twitter-share-button {
+    margin-left: 3px;
+    margin-bottom: -3px;
+    width: 80px !important;
+}
+
+.content .like-bar #vk_like {
+    display: inline;
+}
+
+.content .like-bar #vk_like iframe {
+    margin-bottom: -3px;
+}
+
+/**/
+
+.screenshot-bar {
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    height: 120px;
+    z-index: -1;
+}
+
+.screenshot-bar .sb-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1184px;
+    height: 100%;
+}
+
+.screenshot-bar .item {
+    position: relative;
+    float: left;
+    width: 140px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: 1px solid #444;
+    background-size: 100% 100%;
+    opacity: 0.4;
+    transition: opacity 200ms ease;
+    cursor: pointer;
+}
+
+.screenshot-bar .item:hover {
+    opacity: 1;
+}
+
+/**/
+
+.image-viewer {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    min-width: 1100px;
+}
+
+.image-viewer .background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.image-viewer #image-block {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    margin-left: 5%;
+    border: 1px solid #333;
+    background-size: 100% 100%;
+    background-image: url(img/img1.jpg);
+}
+
+.image-viewer #image-block #close {
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    width: 32px;
+    height: 32px;
+    background-image: url(img/close.png);
+    cursor: pointer;
+    z-index: 11;
+    opacity: 0.7;
+    transition: opacity 200ms ease;
+}
+
+.image-viewer #image-block #close:hover {
+    opacity: 1;
+}
+
+.image-viewer #image-block #prev {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 10%;
+    height: 100%;
+    cursor: pointer;
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100% );
+}
+
+.image-viewer #image-block #prev .left-arrow {
+    position: absolute;
+    top: 45%;
+    left: 20px;
+    width: 62px;
+    height: 124px;
+    background-image: url(img/classic-map.png);
+    background-repeat: no-repeat;
+    transition: opacity 200ms ease;
+    opacity: 0.5;
+}
+
+.image-viewer #image-block #prev:hover .left-arrow {
+    opacity: 1;
+}
+
+.image-viewer #image-block #next {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 10%;
+    height: 100%;
+    cursor: pointer;
+    background: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100% );
+}
+
+.image-viewer #image-block #next .right-arrow {
+    position: absolute;
+    top: 45%;
+    right: 20px;
+    width: 62px;
+    height: 124px;
+    background-image: url(img/classic-map.png);
+    background-position: -254px 0px;
+    background-repeat: no-repeat;
+    transition: opacity 200ms ease;
+    opacity: 0.5;
+}
+
+.image-viewer #image-block #next:hover .right-arrow {
+    opacity: 1;
+}
+
+/**/
+
+.steaky {
+    position: fixed !important;
+    bottom: 7px;
+    left: 0px;
+}
+
+.footer {
+    position: relative;
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+}
+
+.footer .left-block {
+    position: absolute;
+    bottom: 0px;
+    left: 5%;
+}
+
+.footer .left-block div {
+    float: left;
+    padding-top: 1px;
+    color: #aaa;
+    font: normal 10px arial;
+    cursor: default;
+}
+
+.footer .right-block {
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+}
+
+.footer .right-block div {
+    float: left;
+    padding-top: 1px;
+    color: #777;
+    font: normal 10px arial;
+    cursor: default;
+}
+
+.footer .right-block .nwg-site-link {
+    float: left;
+    margin-left: 4px;
+    color: #aaa;
+    font: normal 12px arial;
+    text-decoration: none;
+}
+
+.footer .right-block a {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #aaa;
+    font: normal 12px arial;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/**/
+
+.preloader {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.preloader #text {
+    display: block;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'GOT';
+    color: #fff;
+    cursor: default;
+}

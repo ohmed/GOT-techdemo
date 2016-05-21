@@ -1,0 +1,43 @@
+
+#editor {
+    display: none;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 440px;
+    height: 200px;
+    z-index: 11;
+    background-color: #fff;
+}
+
+#editor #top-menu {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #aaa;
+}
+
+#editor #top-menu .item {
+    float: left;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+}
+
+#editor .main-menu {
+    display: none;
+    height: 160px;
+    width: 100%;
+}
+
+#editor .main-menu .item {
+    float: left;
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+    cursor: pointer;
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>GameOfThrones 3d world map</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+        <link rel="stylesheet" href="index.css?696ba16d0b763f3999b7b01ae022bb52" />
+        <link rel="shortcut icon" href="img/favicon.ico" />
+
+        <script src="index.js?0408efb803e08f1d2571da92659051b9"></script>
+
+        <meta property="fb:app_id" content="384093235091765" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="GameOfThrones world!" />
+        <meta property="og:description" content="Explore GameOfThrones 3D world in your browser" />
+        <meta property="og:image" content="img/img1.jpg" />
+
+    </head>
+
+    <body>
+
+        <!--  -->
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=384093235091765";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+            window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+        </script>
+
+        <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+
+        <script type="text/javascript">
+            VK.init({apiId: 4892434, onlyWidgets: true});
+        </script>
+
+        <!--  -->
+
+        <div id="landing-page" class="desktop">
+
+            <div class="header">
+
+                <div class="title">
+                    <div id="main">Game&nbsp;&nbsp;&nbsp;Of&nbsp;&nbsp;&nbsp;Thrones</div>
+                    <div id="map">map</div>
+                    <div id="alpha">alpha</div>
+                </div>
+
+                <div class="menu">
+
+                    <a id="home" class="active" href="/" onclick="Landing.nav( event )">Home</a>
+                    <a id="blog" href="/blog" onclick="Landing.nav( event )">Blog</a>
+                    <a id="about" href="/about" onclick="Landing.nav( event )">About</a>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div id="home">
+
+                    <div id="background1" class="bg active" style="background-image: url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/img1.jpg); opacity: 1;"><div id="bg-bg"></div></div>
+                    <div id="background2" class="bg" style="background-image: url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/img2.jpg);"><div id="bg-bg"></div></div>
+                    <div id="background3" class="bg" style="background-image: url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/img3.jpg);"><div id="bg-bg"></div></div>
+                    <div id="background4" class="bg" style="background-image: url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/img4.jpg);"><div id="bg-bg"></div></div>
+
+                    <div class="like-bar">
+
+                        <div class="fb-like" data-href="http://nwgstudios.com/got" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+
+                        <a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
+
+                        <div id="vk_like"></div>
+                        <script type="text/javascript">VK.Widgets.Like("vk_like", {type: "button", height: 20});</script>
+
+                    </div>
+
+                    <div id="start-bar">
+
+                        <div id="quality-bar">
+                            <div class="bg"></div>
+                            <div class="label">Choose quality:</div>
+                            <div class="item" onclick="Landing.startGOT(0)">Low</div>
+                            <div class="item" onclick="Landing.startGOT(1)">Medium</div>
+                            <div class="item" onclick="Landing.startGOT(2)">High</div>
+                        </div>
+
+                        <div id="start-btn" onclick="Landing.startExploring()">Start&nbsp;&nbsp;exploring</div>
+
+                    </div>
+
+                </div>
+
+                <div id="blog">
+
+                    <div id="blog-block">
+
+                        <div id="bg-bg"></div>
+
+                        <div id="todo">Sorry,&nbsp;&nbsp;not&nbsp;&nbsp;finished&nbsp;&nbsp;yet :(</div>
+
+                    </div>
+
+                </div>
+
+                <div id="about">
+
+                    <div id="about-block">
+
+                        <div id="bg-bg"></div>
+
+                        <div class="item" style="margin-top: 50px;">
+                            <div class="pic" style="background-image: url(img/bg.png);"></div>
+                            <div class="info-block">
+                                <div class="title">Bogdan Gorpynchuk</div>
+                                <div class="desc">NWEngine, 3D models, UI, texturing</div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="item">
+                            <div class="pic" style="background-image: url(img/pk.png);"></div>
+                            <div class="info-block">
+                                <div class="title">Kopach Pavlo</div>
+                                <div class="desc">UI</div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="quote-bar">
+
+                    <div class="quote">
+                        <div class="text"><font style="font-size: 28px; color: #c22;">"</font>Best 3D map in browser I have seen...<font style="font-size: 28px; color: #c22;">"</font></div>
+                        <div class="author">- Lui Corban</div>
+                    </div>
+                    <div class="quote"></div>
+                    <div class="quote"></div>
+
+                </div>
+
+                <div id="switches-bar">
+                    <div class="item active" onclick="Landing.switchSlide(0)"></div>
+                    <div class="item" onclick="Landing.switchSlide(1)"></div>
+                    <div class="item" onclick="Landing.switchSlide(2)"></div>
+                    <div class="item" onclick="Landing.switchSlide(3)"></div>
+                </div>
+
+            </div>
+
+            <div class="screenshot-bar">
+
+                <div class="sb-wrapper">
+                    <div class="item" onclick="Landing.openImageViewer(0)" style="background-image: url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/0-min.jpg);"></div>
+                    <div class="item" onclick="Landing.openImageViewer(1)" style="background-image: url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/1-min.jpg);"></div>
+                    <div class="item" onclick="Landing.openImageViewer(2)" style="background-image: url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/2-min.jpg);"></div>
+                    <div class="item" onclick="Landing.openImageViewer(3)" style="background-image: url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/3-min.jpg);"></div>
+                    <div class="item" onclick="Landing.openImageViewer(4)" style="background-image: url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/4-min.jpg);"></div>
+                    <div class="item" onclick="Landing.openImageViewer(5)" style="background-image: url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/5-min.jpg);"></div>
+                    <div class="item" onclick="Landing.openImageViewer(6)" style="background-image: url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/6-min.jpg);"></div>
+                    <div class="item" onclick="Landing.openImageViewer(7)" style="background-image: url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/7-min.jpg);"></div>
+                </div>
+
+            </div>
+
+            <div class="footer steaky">
+
+                <div class="left-block">
+                    <div>Achived with NWEngine</div>
+                </div>
+
+                <div class="right-block">
+                    <div>© 2015-2016</div>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a class="nwg-site-link" target="_blank" href="http://nwgstudios.com">NWG studios</a>
+                </div>
+
+            </div>
+
+            <div class="image-viewer">
+
+                <div class="background" onclick="Landing.closeImageViewer()"></div>
+
+                <div id="image-block">
+                    <div id="close" onclick="Landing.closeImageViewer()"></div>
+                    <div id="prev" onclick="Landing.prevImageInViewer()"><div class="left-arrow"></div></div>
+                    <div id="next" onclick="Landing.nextImageInViewer()"><div class="right-arrow"></div></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="landing-page" class="mobile">
+
+            <div id="todo">Mobile version will be ready soon!</div>
+
+        </div>
+
+        <div class="preloader">
+
+            <div id="text">Loading...</div>
+
+        </div>
+
+        <canvas id="viewport"></canvas>
+
+        <div id="ui" style="display:none">
+
+            <div id="main-page">
+
+                <div id="main-nav">
+                    <nav id="families">
+                    </nav>
+                </div>
+
+                <div id="map-controls-top">
+                    <div class="background"></div>
+                    <div class="arrow"></div>
+                </div>
+                <div id="map-controls-bottom">
+                    <div class="background"></div>
+                    <div class="arrow"></div>
+                </div>
+                <div id="map-controls-left">
+                    <div class="background"></div>
+                    <div class="arrow"></div>
+                </div>
+                <div id="map-controls-right">
+                    <div class="background"></div>
+                    <div class="arrow"></div>
+                </div>
+
+                <div class="map-controls">
+                    <div class="map-control map-zoom-in">+</div>
+                    <div class="map-control map-zoom-out">-</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="info-popup">
+            <div class="info-popup-content"></div>
+            <div class="info-popup-arrow"></div>
+        </div>
+
+        <div id="editor">
+
+            <div id="top-menu">
+                <div class="item" title="terrain" onclick="GOT.editor.selectTab( 'terrain' )">Terr</div>
+                <div class="item" title="flora" onclick="GOT.editor.selectTab( 'flora' )">Flora</div>
+                <div class="item" title="decorations" onclick="GOT.editor.selectTab( 'decorations' )">Dec</div>
+                <div class="item" title="settings" onclick="GOT.editor.selectTab( 'settings' )">Set</div>
+            </div>
+
+            <div class="main-menu" id="terrain" style="display: block;">
+
+                <div class="item" title="GroundSMOOTH" onclick="GOT.editor.selectMarker('terrain', 'SMOOTH')">Smooth</div>
+                <div class="item" title="GroundSMOOTHX2" onclick="GOT.editor.selectMarker('terrain', 'SMOOTHX2')">SmoothX2</div>
+                <div class="item" title="GroundNoise" onclick="GOT.editor.selectMarker('terrain', 'NOISE')">Noise</div>
+                <div class="item" title="GroundUP" onclick="GOT.editor.selectMarker('terrain', 'UP')">UP</div>
+                <div class="item" title="GroundDown" onclick="GOT.editor.selectMarker('terrain', 'DOWN')">DOWN</div>
+                <div class="item" title="Grass01" onclick="GOT.editor.selectMarker('terrain', 'GRASS01')">Grass01</div>
+                <div class="item" title="Grass02" onclick="GOT.editor.selectMarker('terrain', 'GRASS02')">Grass02</div>
+                <div class="item" title="Cliff" onclick="GOT.editor.selectMarker('terrain', 'CLIFF')">Cliff</div>
+                <div class="item" title="Swamp" onclick="GOT.editor.selectMarker('terrain', 'SWAMP')">Swamp</div>
+                <div class="item" title="Snow" onclick="GOT.editor.selectMarker('terrain', 'SNOW')">Snow</div>
+                <div class="item" title="Snow" onclick="GOT.editor.selectMarker('terrain', 'ERASER')">Eraser</div>
+
+            </div>
+
+            <div class="main-menu" id="flora">
+                <div class="item" title="Tree01" onclick="GOT.editor.selectMarker('flora', 'Tree/01')">T1</div>
+                <div class="item" title="Tree02" onclick="GOT.editor.selectMarker('flora', 'Tree/02')">T2</div>
+                <div class="item" title="Tree03" onclick="GOT.editor.selectMarker('flora', 'Tree/03')">T3</div>
+                <div class="item" title="Bush01" onclick="GOT.editor.selectMarker('flora', 'Bush/01')">B1</div>
+                <div class="item" title="Bush02" onclick="GOT.editor.selectMarker('flora', 'Bush/02')">B2</div>
+                <div class="item" title="Bush03" onclick="GOT.editor.selectMarker('flora', 'Bush/03')">B3</div>
+                <div class="item" title="Bush03" onclick="GOT.editor.selectMarker('flora', 'Eraser')">Eraser</div>
+            </div>
+
+            <div class="main-menu" id="decorations">
+                <div class="item" title="Rock01" onclick="GOT.editor.selectMarker('decorations', 'Rock/01')">Rock01</div>
+                <div class="item" title="Rock02" onclick="GOT.editor.selectMarker('decorations', 'Rock/02')">Rock02</div>
+                <div class="item" title="Rock03" onclick="GOT.editor.selectMarker('decorations', 'Rock/03')">Rock03</div>
+                <div class="item" title="Rock04" onclick="GOT.editor.selectMarker('decorations', 'Rock/04')">Rock04</div>
+                <div class="item" title="Eraser" onclick="GOT.editor.selectMarker('decorations', 'Eraser')">Eraser</div>
+            </div>
+
+        </div>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-38759022-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+    </body>
+
+</html>
