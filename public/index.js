@@ -33536,22 +33536,22 @@ var Landing = {
 
                 {
                     quote: { text: '<font style="font-size: 28px; color: #c22;">"</font>Best 3D map in browser I have seen...<font style="font-size: 28px; color: #c22;">"</font>', author: '- Lui Corban' },
-                    image: 'https://s3-eu-west-1.amazonaws.com/nwg-data/img1.jpg'
+                    image: 'img/img1.jpg'
                 },
 
                 {
                     quote: { text: '<font style="font-size: 28px; color: #c22;">"</font>It\'s new level of web!<font style="font-size: 28px; color: #c22;">"</font>', author: '- Donald Alber' },
-                    image: 'https://s3-eu-west-1.amazonaws.com/nwg-data/img2.jpg'
+                    image: 'img/img2.jpg'
                 },
 
                 {
                     quote: { text: '<font style="font-size: 28px; color: #c22;">"</font>Recently I thought it wasn\'t even possible...<font style="font-size: 28px; color: #c22;">"</font>', author: '- Alex Sandarm' },
-                    image: 'https://s3-eu-west-1.amazonaws.com/nwg-data/img3.jpg'
+                    image: 'img/img3.jpg'
                 },
 
                 {
                     quote: { text: '<font style="font-size: 28px; color: #c22;">"</font>I am Game of Thrones fan</br>and I love this awesome map!<font style="font-size: 28px; color: #c22;">"</font>', author: '- Devid Merdok' },
-                    image: 'https://s3-eu-west-1.amazonaws.com/nwg-data/img4.jpg'
+                    image: 'img/img4.jpg'
                 }
 
             ]
@@ -33871,7 +33871,7 @@ Landing.openImageViewer = function ( contentId ) {
         opacity: 0.4
     }, 200, function () {
 
-        $('.image-viewer #image-block').css( 'background-image', 'url(https://s3-eu-west-1.amazonaws.com/nwg-data/img/' + contentId + '.jpg)' );
+        $('.image-viewer #image-block').css( 'background-image', 'url(img/screens/' + contentId + '.jpg)' );
 
         $('.image-viewer #image-block').animate({
             opacity: 1
